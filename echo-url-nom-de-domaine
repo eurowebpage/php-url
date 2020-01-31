@@ -1,0 +1,44 @@
+###########################################################################################
+#                            afficher l'url du site
+###########################################################################################
+
+###########################################
+# Exemple 1
+###########################################
+<?php
+$adresseurl = "https://".$_SERVER['SERVER_NAME'];
+$_SESSION['adresseurl'] = $adresseurl;
+echo $adresseurl
+
+###########################################
+# Exemple 2 détecte http ou https
+###########################################
+
+<?php 
+  if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') 
+    $url = "https"; 
+  else
+    $url = "http"; 
+    
+  // Ajoutez // à l'URL.
+  $url .= "://"; 
+    
+  // Ajoutez l'hôte (nom de domaine, ip) à l'URL.
+  $url .= $_SERVER['HTTP_HOST']; 
+      
+  // Afficher l'URL
+  echo $url; 
+?>
+
+
+################################################################################
+# exemple d'utilisation
+# copier le code ci-dessous ds un fichier ex : urlsite.php
+# <?php include('urlsite.php');?>
+################################################################################
+
+
+<link rel="dns-prefetch" href="<?php include('urlsite.php');?>">
+
+<link rel="preconnect" href="<?php include('urlsite.php');?>" >
+
