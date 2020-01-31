@@ -52,3 +52,7 @@ echo $adresseurl
 <a href="https://www.facebook.com/sharer/sharer.php?u=<?php include('url.php');?>"> 
   
 <a href="https://twitter.com/intent/tweet/?url=<?php include('url.php');?>/&text=<?php include('titre.php');?>"
+
+
+
+
