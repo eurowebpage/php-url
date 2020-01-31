@@ -20,3 +20,24 @@ echo $adresse;
 ################################################################################
 # Résultat : contact
 ################################################################################
+
+################################################################################
+# exemple d'utilisation
+# copier le code ci-dessous ds un fichier ex : titre.php
+################################################################################
+
+
+<title><?php include('titre.php');?></title>
+
+<meta name="description" content="<?php include('titre.php');?>, si vous avez une description unique afin d'éviter le duplicate content " />
+
+<meta name="keywords" content="<?php include('titre.php');?>,key,key,key,key" />
+
+<meta property="og:title" content="<?php include('titre.php');?>"/>
+
+<img alt="<?php include('titre.php');?>">
+
+<a href title='<?php include('titre.php');?>'>
+
+<h1><?php include('titre.php');?></h1>
+
