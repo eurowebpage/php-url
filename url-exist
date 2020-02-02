@@ -1,0 +1,17 @@
+
+
+<?php
+$url = 'https://votre-site.eu';
+$array = get_headers($url);
+$string = $array[0];
+if(strpos($string,"200"))
+  {
+    echo 'url exists';
+  }
+  else
+  {
+    echo 'url does not exist';
+  }
+?>
+
+
